@@ -1,0 +1,28 @@
+{
+  "name": "<%= projectName %>",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/<%= projectName %>.umd.js",
+  "module": "dist/<%= projectName %>.es.js",
+  "types": "dist/types",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:docs": "vite build --mode docs",
+    "test": "jest --coverage"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/<%= projectName %>.es.js",
+      "require": "./dist/<%= projectName %>.umd.js"
+    }
+  },
+  "keywords": [],
+  "author": "mangroves-fe",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

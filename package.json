@@ -1,0 +1,28 @@
+{
+  "name": "generator-mangroves",
+  "version": "1.0.0",
+  "description": "Yeoman generator for mangroves libs",
+  "scripts": {
+    "build": "rm -rf ./generators && tsc && cp -R ./templates ./generators/app/templates"
+  },
+  "keywords": [
+    "yeoman-generators"
+  ],
+  "files": [
+    "generators",
+    "templates",
+    "types"
+  ],
+  "author": "ChuChencheng",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^4.12.0"
+  },
+  "devDependencies": {
+    "@types/yeoman-generator": "^4.11.3",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.19.0",
+    "typescript": "^4.1.3"
+  }
+}
