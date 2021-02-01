@@ -24,7 +24,11 @@ class MangrovesGenerator extends Generator {
     this.log('Copying template files...')
 
     const { projectName, framework } = this.answers
-    const context = { projectName, framework }
+    const context = {
+      projectName,
+      framework,
+      year: new Date().getFullYear(),
+    }
 
     // Set destination root
     this.destinationRoot(`./${projectName}`)
