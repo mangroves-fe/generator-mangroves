@@ -38,6 +38,8 @@ class MangrovesGenerator extends Generator {
       this.templatePath('common'),
       this.destinationPath(),
       context,
+      undefined,
+      { globOptions: { dot: true } },
     )
 
     // Rename .gitignore
@@ -51,6 +53,8 @@ class MangrovesGenerator extends Generator {
       this.templatePath(framework),
       this.destinationPath(),
       context,
+      undefined,
+      { globOptions: { dot: true } },
     )
   }
 
