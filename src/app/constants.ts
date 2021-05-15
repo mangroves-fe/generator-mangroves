@@ -36,6 +36,7 @@ export const commonDevDependencies = [
   // jest
   '@types/jest',
   'jest',
+  'ts-jest',
 
   // typescript
   'typescript',
